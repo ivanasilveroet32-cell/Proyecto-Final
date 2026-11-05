@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="HTML5.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>07. HTML5</h1>
+        </header>
+
+        <section class="quiz-section">
+            <h2>Cuestionario de Autoevaluación</h2>
+            <p style="color: var(--text-muted); font-size: 14px;">Responde las preguntas y presiona el botón al final para validar tus conocimientos.</p>
+
+            <form id="quizForm">
+                
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">1.  Si una condición dice: SI (edad >= 18) ENTONCES, ¿qué camino toma el programa si el usuario tiene 15 años?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p1" value="incorrecta"> A) El camino del SINO (Falso)
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p1" value="correcta"> B)   El camino del ENTONCES (Verdadero)
+                        
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">2. ¿Qué operador lógico requiere que DOS condiciones se cumplan obligatoriamente al mismo tiempo para ser verdadero?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p2" value="correcta"> A) El operador Y (AND)
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p2" value="incorrecta"> B) El operador O (OR)
+                        
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">3. ¿Qué estructura de control se utiliza para repetir un bloque de código mientras una condición sea verdadera?</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p3" value="incorrecta"> A) Una condicional (Si/If)
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p3" value="correcta"> B)  Un bucle o ciclo (Mientras/For)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">4. esta 1</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p4" value="incorrecta"> A) analogRead()
+                        
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p4" value="correcta"> B)  digitalWrite()
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="pregunta-block">
+                    <div class="pregunta-texto">5. esta 2</div>
+                    <div class="opciones-container">
+                        <label class="opcion-label">
+                            <input type="radio" name="p5" value="incorrecta"> A) analogRead()
+                        
+                        </label>
+                        <label class="opcion-label">
+                            <input type="radio" name="p5" value="correcta"> B)  digitalWrite()
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-verificar" onclick="validarCuestionario()">Verificar Respuestas</button>
+            </form>
+        </section>
+    </div>
+    <a href="Principal.html" class="btn-home">&larr; Atras</a>
+
+    <script src="HTML5.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+function validarCuestionario() {
+    const r1 = document.querySelector('input[name="p1"]:checked');
+    const r2 = document.querySelector('input[name="p2"]:checked');
+    const r3 = document.querySelector('input[name="p3"]:checked');
+    const r4 = document.querySelector('input[name="p4"]:checked');
+    const r5 = document.querySelector('input[name="p5"]:checked');
+
+    if (!r1 || !r2 || !r3) {
+        alert("⚠️ Por favor, responde todas las preguntas antes de verificar.");
+        return;
+    }
+
+    let errores = 0;
+    let mensajeError = "❌ Tienes errores en las siguientes preguntas:\n";
+
+    if (r1.value !== "correcta") {
+        errores++;
+        mensajeError += "- Pregunta 1 \n";
+    }
+
+    if (r2.value !== "correcta") {
+        errores++;
+        mensajeError += "- Pregunta 2 \n";
+    }
+
+
+    if (r3.value !== "correcta") {
+        errores++;
+        mensajeError += "- Pregunta 3 \n";
+    }
+
+    if (r4.value !== "correcta") {
+        errores++;
+        mensajeError += "- Pregunta 4 \n";
+    }
+
+    if (r5.value !== "correcta") {
+        errores++;
+        mensajeError += "- Pregunta 5 \n";
+    }
+
+   
+    if (errores === 0) {
+        alert("¡Felicitaciones! 🎉 Has respondido correctamente todas las preguntas. ¡Excelente trabajo!");
+    } else {
+        alert(mensajeError + "\n⚠️ Por favor, revisa tus apuntes y vuélvelo a realizar.");
+    }
+}

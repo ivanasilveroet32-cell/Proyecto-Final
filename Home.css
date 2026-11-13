@@ -22,6 +22,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    opacity: 70%;
 }
 
 .logo {
@@ -162,14 +163,6 @@ body {
     font-size: 15px;
 }
 
-footer {
-    background-color: var(--dark-color);
-    color: #ffffff;
-    text-align: center;
-    padding: 40px 10%;
-    margin-top: 60px;
-    font-size: 14px;
-}
 .imagen {
     display: block;
     margin-left: auto;  

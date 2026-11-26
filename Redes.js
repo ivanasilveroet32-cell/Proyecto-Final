@@ -2,6 +2,9 @@ function validarCuestionario() {
     const r1 = document.querySelector('input[name="p1"]:checked');
     const r2 = document.querySelector('input[name="p2"]:checked');
     const r3 = document.querySelector('input[name="p3"]:checked');
+    const r4 = document.querySelector('input[name="p4"]:checked');
+    const r5 = document.querySelector('input[name="p5"]:checked');
+
 
     if (!r1 || !r2 || !r3) {
         alert("⚠️ Por favor, responde todas las preguntas antes de verificar.");
@@ -21,6 +24,11 @@ function validarCuestionario() {
         mensajeError += "- Pregunta 2: El almacenamiento secundario retiene los datos aunque no haya energía.\n";
     }
 
+    if (r3.value !== "correcta") {
+        errores++;
+        mensajeError += "- Pregunta 3: Los periféricos son dispositivos externos, no canales de transmisión.\n";
+    }
+
     if (r4.value !== "correcta") {
         errores++;
         mensajeError += "- Pregunta 4 \n";
@@ -31,11 +39,7 @@ function validarCuestionario() {
         mensajeError += "- Pregunta 5 \n";
     }
 
-    if (r3.value !== "correcta") {
-        errores++;
-        mensajeError += "- Pregunta 3: Los periféricos son dispositivos externos, no canales de transmisión.\n";
-    }
-
+   
    
     if (errores === 0) {
         alert("¡Felicitaciones! 🎉 Has respondido correctamente todas las preguntas de Organización de Computadoras. ¡Excelente trabajo!");

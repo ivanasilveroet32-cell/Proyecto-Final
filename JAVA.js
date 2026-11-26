@@ -2,6 +2,9 @@ function validarCuestionario() {
     const r1 = document.querySelector('input[name="p1"]:checked');
     const r2 = document.querySelector('input[name="p2"]:checked');
     const r3 = document.querySelector('input[name="p3"]:checked');
+    const r4 = document.querySelector('input[name="p4"]:checked');
+    const r5 = document.querySelector('input[name="p5"]:checked');
+
 
     if (!r1 || !r2 || !r3) {
         alert("⚠️ Por favor, responde todas las preguntas antes de verificar.");
